@@ -40,7 +40,7 @@ Running tests on my laptop only helps if you remember to do it, and people forge
 
 The first green run proves that all the three test passes on the linux runner. because the automated safety is live and every new push now pass the same test .
 
-![Automating Tests and Proving CI Catches Defects](https://nextwork.ai/ecstatic_purple_daring_surinam_cherry/uploads/d695935d-8372-4b16-8a7b-e69abc8284c0_n8rje9m9)
+![Diagnosing a Failed Build and Restoring Green](https://nextwork.ai/ecstatic_purple_daring_surinam_cherry/uploads/d695935d-8372-4b16-8a7b-e69abc8284c0_vzuw5f04)
 
 ## Diagnosing a Failed Build and Restoring Green
 
@@ -52,7 +52,7 @@ In this step, i am diagnosing the failed multiplication tests from the workflow 
 
 The pytest log showed that test\_multiply\_positive\_numbers received 7 instead of the expected 12, and test\_multiply\_negative\_number received 1 instead of the expected -6. Both wrong results are sums (3 + 4 = 7 and -2 + 3 = 1), while is\_even still passed. This showed that multiply() was using return a + b instead of return a \* b.
 
-![Diagnosing a Failed Build and Restoring Green](https://nextwork.ai/ecstatic_purple_daring_surinam_cherry/uploads/d695935d-8372-4b16-8a7b-e69abc8284c0_vzuw5f04)
+![Automating Tests and Proving CI Catches Defects](https://nextwork.ai/ecstatic_purple_daring_surinam_cherry/uploads/d695935d-8372-4b16-8a7b-e69abc8284c0_n8rje9m9)
 
 ## Validating Compatibility Across Python Versions
 
