@@ -4,19 +4,19 @@
 
 ### The purpose of the CI pipeline
 
-In this project, I'm going to build the python calculator protected by three automated systems. So that The Github actions will check it an hosted linux runner after every push.
+In this project, I'm going to build the python calculator protected by three automated systems. So that the Github actions will check it an hosted linux runner after every push.
 
 ## Preparing a Reproducible Python Workspace
 
 ### Setting up an isolated development environment
 
-In this step, We are preparing a predictable local workspace: checking Python 3.15.2, setting the global Git identity, and creating a virtual environment with pytest 9.2.0 installed.
+In this step, I am preparing a predictable local workspace: checking Python 3.15.2, setting the global Git identity, and creating a virtual environment with pytest 9.2.0 installed.
 
 ![Preparing a Reproducible Python Workspace](https://nextwork.ai/ecstatic_purple_daring_surinam_cherry/uploads/d695935d-8372-4b16-8a7b-e69abc8284c0_3libaci5)
 
 ### Why dependency isolation matters
 
-The virtual environment keeps this project’s packages separate from your computer’s main Python and from other projects.Think of it as a lunchbox for each project. Everything the project needs goes in its own box, so nothing gets mixed up.
+The virtual environment keeps this project’s packages separate from my computer’s main Python and from other projects.Think of it as a lunchbox for each project. Everything the project needs goes in its own box, so nothing gets mixed up.
 
 ## Building and Testing the Calculator Locally
 
@@ -34,7 +34,7 @@ I expect multiply(3, 4) to return 12. I expect is\_even(8) to return True.
 
 ### Connecting pytest to GitHub Actions
 
-Running tests on my laptop only helps if you remember to do it, and people forget. GitHub Actions fixes this by running your tests automatically every time you push code to GitHub. You write the steps in a file called ci.yml. When you push, GitHub gets a fresh Linux computer, downloads your code, installs the packages, and runs pytest. If all tests pass, the run turns green. If any test fails, it turns red. First you publish the correct code, so you know the pipeline passes when everything is right. Then you break the code on purpose by changing a \* b to a + b. The tests fail and the run turns red. This proves the pipeline can catch mistakes automatically.
+Running tests on my laptop only helps if you remember to do it, and forget. GitHub Actions fixes this by running your tests automatically every time you push code to GitHub. You write the steps in a file called ci.yml. When you push, GitHub gets a fresh Linux computer, downloads your code, installs the packages, and runs pytest. If all tests pass, the run turns green. If any test fails, it turns red. First you publish the correct code, so you know the pipeline passes when everything is right. Then you break the code on purpose by changing a \* b to a + b. The tests fail and the run turns red. This proves the pipeline can catch mistakes automatically.
 
 ### Verifying the first successful workflow
 
@@ -68,9 +68,8 @@ In this project I learnt how to build a Python CI pipeline. I set up a virtual e
 
 ### Project experience and challenges
 
-t took me about 3 hours in total. The coding and testing were quick, but I spent extra time on setup and fixing Git errors like the rejected push.
+It took me about 3 hours in total. The coding and testing were quick, but I spent extra time on setup and fixing Git errors like the rejected push.
 
 ### Next steps in my DevOps learning
 
-Thanks for doing this project!\
 I did this project today to learn how to build a Python CI pipeline with GitHub Actions that automatically tests my code and catches bugs. Another skill I want to learn is how to deploy an app automatically (CD), so code that passes the tests goes live by itself.
